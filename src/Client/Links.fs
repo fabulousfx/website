@@ -1,6 +1,17 @@
 namespace FabulousWebsite.Client
 
 module Links =
-    let Github = "https://github.com/fsprojects/Fabulous"
-    let Gitter = "https://gitter.im/fsprojects/Fabulous"
-    let Slack = "https://fsharp.slack.com/messages/mobiledev/"
+    module Docs =
+        let fabulous = "/docs/Fabulous"
+        let fabulousXamarinForms = "/docs/Fabulous.XamarinForms" 
+
+    let root = "/"
+    let docs = "/docs"
+    let showcase = "/showcase"
+    let community = "/community"
+    let gettingStarted = "/getting-started"
+
+module ExternalLinks =
+    let github = "https://github.com/fsprojects/Fabulous"
+    let gitter = "https://gitter.im/fsprojects/Fabulous"
+    let slack = "https://fsharp.slack.com/messages/mobiledev/"

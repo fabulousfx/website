@@ -11,11 +11,11 @@ module Navbar =
             prop.children [
                 Bulma.navbarBrand.div [
                     Bulma.navbarItem.a [
-                        prop.href "#"
+                        prop.href Links.root
                         prop.children [
                             Html.img [
                                 prop.style [ style.width 130 ]
-                                prop.src "assets/logo.svg"
+                                prop.src Assets.logoSvg
                             ]
                         ]
                     ]
@@ -28,32 +28,32 @@ module Navbar =
                         prop.children [
                             Bulma.navbarLink.a [
                                 navbarLink.isArrowless
-                                prop.href "/docs"
-                                prop.text "Docs"
+                                prop.href Links.docs
+                                prop.text Strings.Navbar.Docs
                             ]
 
                             Bulma.navbarDropdown.div [
                                 Bulma.navbarItem.a [
-                                    prop.href "/docs/Fabulous"
-                                    prop.text "Fabulous"
+                                    prop.href Links.Docs.fabulous
+                                    prop.text Strings.Navbar.DocsFabulous
                                 ]
                                 Bulma.navbarDivider []
                                 Bulma.navbarItem.a [
-                                    prop.href "/docs/Fabulous.XamarinForms"
-                                    prop.text "Fabulous for Xamarin.Forms"
+                                    prop.href Links.Docs.fabulousXamarinForms
+                                    prop.text Strings.Navbar.DocsFabulousXamarinForms
                                 ]
                             ]
                         ]
                     ]
 
                     Bulma.navbarItem.a [
-                        prop.href "/showcase"
-                        prop.text "Showcase"
+                        prop.href Links.showcase
+                        prop.text Strings.Navbar.Showcase
                     ]
 
                     Bulma.navbarItem.a [
-                        prop.href "/community"
-                        prop.text "Community"
+                        prop.href Links.community
+                        prop.text Strings.Navbar.Community
                     ]
 
                     Bulma.navbarItem.a [
@@ -67,7 +67,8 @@ module Navbar =
                     ]
 
                     Bulma.navbarItem.a [
-                        prop.href Links.Github
+                        prop.title Strings.Navbar.GitHub
+                        prop.href ExternalLinks.github
                         prop.children [
                             Bulma.icon [
                                 prop.children [
@@ -78,7 +79,8 @@ module Navbar =
                     ]
 
                     Bulma.navbarItem.a [
-                        prop.href Links.Gitter
+                        prop.title Strings.Navbar.Gitter
+                        prop.href ExternalLinks.gitter
                         prop.children [
                             Bulma.icon [
                                 prop.children [
@@ -89,7 +91,8 @@ module Navbar =
                     ]
 
                     Bulma.navbarItem.a [
-                        prop.href Links.Slack
+                        prop.title Strings.Navbar.Slack
+                        prop.href ExternalLinks.slack
                         prop.children [
                             Bulma.icon [
                                 prop.children [
@@ -101,8 +104,8 @@ module Navbar =
 
                     Bulma.navbarItem.div [
                         Bulma.button.a [
-                            prop.href "/getting-started"
-                            prop.text "Get started"
+                            prop.href Links.gettingStarted
+                            prop.text Strings.Navbar.GetStarted
                         ]
                     ]
                 ]
