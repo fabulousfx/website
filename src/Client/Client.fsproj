@@ -14,6 +14,7 @@
     <Compile Include="Strings.fs" />
     <Compile Include="pages/Home.fs" />
     <Compile Include="Navbar.fs" />
+    <Compile Include="Footer.fs" />
     <Compile Include="Client.fs" />
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />

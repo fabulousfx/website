@@ -32,5 +32,5 @@ module Strings =
 
             module UIFrameworksPane =
                 let title = "Choose your preferred UI framework"
-                let footerPart1 = "Don't see your favorite framework "
+                let footerPart1 = "Don't see your favorite framework?"
                 let footerPart2 = "Learn how to add support for Fabulous"

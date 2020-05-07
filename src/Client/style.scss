@@ -14,6 +14,7 @@ $family-primary: 'Open Sans';
 
 // Bulma
 @import "~bulma/bulma";
+$footer-padding: 3rem 1.5rem 6rem;
 
 html, body {
   font-family: "Open Sans", serif;
@@ -26,4 +27,8 @@ html, body {
 .getting-started-button {
   height: 50px;
   font-size: larger;
+}
+
+.framework-logo {
+  width: 150px;
 }

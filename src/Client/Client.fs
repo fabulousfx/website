@@ -25,6 +25,7 @@ let view model dispatch =
     Html.div [
         Navbar.view ()
         Home.view ()
+        Footer.view ()
     ]
 
 #if DEBUG

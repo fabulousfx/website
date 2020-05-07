@@ -213,22 +213,53 @@ let view model dispatch =
                             Bulma.title.h3 Strings.Pages.Home.UIFrameworksPane.title
 
                             Bulma.columns [
-                                Bulma.column [
-                                    column.isHalf
-                                    prop.children [
-                                        Bulma.text.p "Images"
+                                columns.isCentered
+                                columns.isVCentered
+                                prop.children [
+                                    Bulma.column [
+                                        prop.children [
+                                            Bulma.image [
+                                                prop.className "framework-logo"
+                                                helpers.isInlineBlock
+                                                prop.children [
+                                                    Html.img [
+                                                        prop.src Assets.xamarinFormsPng
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
                                     ]
-                                ]
-                                Bulma.column [
-                                    column.isHalf
-                                    prop.children [
-                                        Bulma.text.p "Choose from the supported platforms"
+                                    Bulma.column [
+                                        prop.children [
+                                            Bulma.image [
+                                                prop.className "framework-logo"
+                                                helpers.isInlineBlock
+                                                prop.children [
+                                                    Html.img [
+                                                        prop.src Assets.unoPlatformPng
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                    Bulma.column [
+                                        prop.children [
+                                            Bulma.image [
+                                                prop.className "framework-logo"
+                                                helpers.isInlineBlock
+                                                prop.children [
+                                                    Html.img [
+                                                        prop.src Assets.wpfPng
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
                                     ]
                                 ]
                             ]
 
                             Html.div [
-                                Html.text Strings.Pages.Home.UIFrameworksPane.footerPart1
+                                Html.p Strings.Pages.Home.UIFrameworksPane.footerPart1
                                 Html.a [
                                     prop.href Links.docs
                                     prop.text Strings.Pages.Home.UIFrameworksPane.footerPart2
@@ -249,19 +280,33 @@ let view model dispatch =
                         container.isFluid
                         text.hasTextCentered
                         prop.children [
-                            Bulma.title.h3 "See your changes without stopping the app"
+                            Bulma.title.h3 "Save time with LiveUpdate"
 
                             Bulma.columns [
-                                Bulma.column [
-                                    column.isHalf
-                                    prop.children [
-                                        Bulma.text.p "Images"
+                                columns.isCentered
+                                columns.isVCentered
+                                prop.children [
+                                    Bulma.column [
+                                        column.isHalf
+                                        prop.children [
+                                            Bulma.media [
+                                                Html.video [
+                                                    prop.controls true
+                                                    prop.children [
+                                                        Html.source [
+                                                            prop.src Assets.liveUpdateMov
+                                                            prop.type' Assets.liveUpdateMovMediaType
+                                                        ]
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
                                     ]
-                                ]
-                                Bulma.column [
-                                    column.isHalf
-                                    prop.children [
-                                        Bulma.text.p "Choose from the supported platforms"
+                                    Bulma.column [
+                                        prop.children [
+                                            Bulma.text.p "You don't need to restart the app anymore to see your changes."
+                                            Bulma.text.p "LiveUpdate will recompile your code when saving, and automatically reload the app while it's running."
+                                        ]
                                     ]
                                 ]
                             ]

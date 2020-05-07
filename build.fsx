@@ -74,11 +74,6 @@ Target.create "InstallClient" (fun _ ->
 
 Target.create "Build" (fun _ ->
     runDotNet "build" serverPath
-    Shell.regexReplaceInFileWithEncoding
-        "let app = \".+\""
-       ("let app = \"" + release.NugetVersion + "\"")
-        System.Text.Encoding.UTF8
-        (Path.combine clientPath "Version.fs")
     runTool yarnTool "webpack-cli -p" __SOURCE_DIRECTORY__
 )
 
@@ -108,8 +103,14 @@ Target.create "Run" (fun _ ->
     |> ignore
 )
 
-
-
+Target.create "Bundle" (fun _ ->
+    let serverDir = Path.combine deployDir "Server"
+    let clientDir = Path.combine deployDir "Client"
+    let publicDir = Path.combine clientDir "public"
+    let publishArgs = sprintf "publish -c Release -o \"%s\"" serverDir
+    runDotNet publishArgs serverPath
+    Shell.copyDir publicDir clientDeployPath FileFilter.allFiles
+)
 
 
 
@@ -118,7 +119,7 @@ open Fake.Core.TargetOperators
 "Clean"
     ==> "InstallClient"
     ==> "Build"
-
+    ==> "Bundle"
 
 "Clean"
     ==> "InstallClient"
