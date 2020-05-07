@@ -76,22 +76,22 @@ let view model dispatch =
                         Bulma.title.h1 [
                             title.isSpaced
                             prop.className "title"
-                            prop.text Strings.Pages.Home.HeaderPane.Title
+                            prop.text Strings.Pages.Home.HeaderPane.title
                         ]
                         Bulma.title.h2 [
                             prop.className "subtitle"
-                            prop.text Strings.Pages.Home.HeaderPane.Subtitle
+                            prop.text Strings.Pages.Home.HeaderPane.subtitle
                         ]
                         Html.p [
                             prop.className "catchphrase"
-                            prop.text Strings.Pages.Home.HeaderPane.CatchPhrase
+                            prop.text Strings.Pages.Home.HeaderPane.catchPhrase
                         ]
                         Html.div [
                                 Bulma.button.button [
                                 button.isRounded
                                 color.isDanger
                                 prop.className "gettings-started-button"
-                                prop.text Strings.Pages.Home.HeaderPane.GettingStartedButton
+                                prop.text Strings.Pages.Home.HeaderPane.gettingStartedButton
                             ]
                         ]
                     ]
@@ -108,7 +108,7 @@ let view model dispatch =
                         container.isFluid
                         text.hasTextCentered
                         prop.children [
-                            Bulma.title.h3 Strings.Pages.Home.UpdateLogicPane.Title
+                            Bulma.title.h3 Strings.Pages.Home.UpdateLogicPane.title
 
                             Bulma.columns [
                                 columns.isCentered
@@ -145,7 +145,7 @@ let view model dispatch =
                         container.isFluid
                         text.hasTextCentered
                         prop.children [
-                            Bulma.title.h3 Strings.Pages.Home.UIFlavorsPane.Title
+                            Bulma.title.h3 Strings.Pages.Home.UIFlavorsPane.title
 
                             Bulma.columns [
                                 Bulma.column [
@@ -155,7 +155,7 @@ let view model dispatch =
                                             Bulma.cardHeader [
                                                 Bulma.cardHeaderTitle.p [
                                                     cardHeaderTitle.isCentered
-                                                    prop.text Strings.Pages.Home.UIFlavorsPane.DynamicViewsCardTitle
+                                                    prop.text Strings.Pages.Home.UIFlavorsPane.dynamicViewsCardTitle
                                                 ]
                                             ]
                                             Bulma.cardContent [
@@ -176,7 +176,7 @@ let view model dispatch =
                                             Bulma.cardHeader [
                                                 Bulma.cardHeaderTitle.p [
                                                     cardHeaderTitle.isCentered
-                                                    prop.text Strings.Pages.Home.UIFlavorsPane.StaticViewsCardTitle
+                                                    prop.text Strings.Pages.Home.UIFlavorsPane.staticViewsCardTitle
                                                 ]
                                             ]
                                             Bulma.cardContent [
@@ -193,7 +193,7 @@ let view model dispatch =
                             ]
 
                             Html.div [
-                                Html.text Strings.Pages.Home.UIFlavorsPane.Footer
+                                Html.text Strings.Pages.Home.UIFlavorsPane.footer
                             ]
                         ]
                     ]
@@ -210,7 +210,7 @@ let view model dispatch =
                         container.isFluid
                         text.hasTextCentered
                         prop.children [
-                            Bulma.title.h3 Strings.Pages.Home.UIFrameworksPane.Title
+                            Bulma.title.h3 Strings.Pages.Home.UIFrameworksPane.title
 
                             Bulma.columns [
                                 Bulma.column [
@@ -228,10 +228,10 @@ let view model dispatch =
                             ]
 
                             Html.div [
-                                Html.text Strings.Pages.Home.UIFrameworksPane.FooterPart1
+                                Html.text Strings.Pages.Home.UIFrameworksPane.footerPart1
                                 Html.a [
                                     prop.href Links.docs
-                                    prop.text Strings.Pages.Home.UIFrameworksPane.FooterPart2
+                                    prop.text Strings.Pages.Home.UIFrameworksPane.footerPart2
                                 ]
                             ]
                         ]

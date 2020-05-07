@@ -29,18 +29,18 @@ module Navbar =
                             Bulma.navbarLink.a [
                                 navbarLink.isArrowless
                                 prop.href Links.docs
-                                prop.text Strings.Navbar.Docs
+                                prop.text Strings.Navbar.docs
                             ]
 
                             Bulma.navbarDropdown.div [
                                 Bulma.navbarItem.a [
                                     prop.href Links.Docs.fabulous
-                                    prop.text Strings.Navbar.DocsFabulous
+                                    prop.text Strings.Navbar.docsFabulous
                                 ]
                                 Bulma.navbarDivider []
                                 Bulma.navbarItem.a [
                                     prop.href Links.Docs.fabulousXamarinForms
-                                    prop.text Strings.Navbar.DocsFabulousXamarinForms
+                                    prop.text Strings.Navbar.docsFabulousXamarinForms
                                 ]
                             ]
                         ]
@@ -48,12 +48,12 @@ module Navbar =
 
                     Bulma.navbarItem.a [
                         prop.href Links.showcase
-                        prop.text Strings.Navbar.Showcase
+                        prop.text Strings.Navbar.showcase
                     ]
 
                     Bulma.navbarItem.a [
                         prop.href Links.community
-                        prop.text Strings.Navbar.Community
+                        prop.text Strings.Navbar.community
                     ]
 
                     Bulma.navbarItem.a [
@@ -67,7 +67,7 @@ module Navbar =
                     ]
 
                     Bulma.navbarItem.a [
-                        prop.title Strings.Navbar.GitHub
+                        prop.title Strings.Navbar.gitHub
                         prop.href ExternalLinks.github
                         prop.children [
                             Bulma.icon [
@@ -79,7 +79,7 @@ module Navbar =
                     ]
 
                     Bulma.navbarItem.a [
-                        prop.title Strings.Navbar.Gitter
+                        prop.title Strings.Navbar.gitter
                         prop.href ExternalLinks.gitter
                         prop.children [
                             Bulma.icon [
@@ -91,7 +91,7 @@ module Navbar =
                     ]
 
                     Bulma.navbarItem.a [
-                        prop.title Strings.Navbar.Slack
+                        prop.title Strings.Navbar.slack
                         prop.href ExternalLinks.slack
                         prop.children [
                             Bulma.icon [
@@ -105,7 +105,7 @@ module Navbar =
                     Bulma.navbarItem.div [
                         Bulma.button.a [
                             prop.href Links.gettingStarted
-                            prop.text Strings.Navbar.GetStarted
+                            prop.text Strings.Navbar.getStarted
                         ]
                     ]
                 ]
